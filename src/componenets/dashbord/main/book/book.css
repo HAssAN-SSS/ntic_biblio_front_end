@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.book{
+    width: 29.3%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 1.5% 2%;
+    font-family: 'Inter', sans-serif;
+
+}
+.book-img{
+    width: 55%;
+}
+.book-info{
+    background-color: white;
+    width: 45%;
+    padding-left: 1%;
+    display: flex;
+    flex-flow: column;
+    align-items: start ;
+    justify-content: space-around;
+    padding: 6% 3%;
+    border-radius: 0px 10px 10px 0px;
+}
+.disponible{
+    color: rgba(5, 112, 22, 0.77);
+}

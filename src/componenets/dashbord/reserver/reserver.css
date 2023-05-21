@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.reserver{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: rgba(237, 237, 237, 1);
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+
+
+}
+.reserver-panal{
+    width: 65%;
+    margin-top: 3%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.left img{
+    border-radius: 20px 0px 0px 20px;
+
+}
+.right{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding-left: 7%;
+    padding-right: 10%;
+}
+.revesion-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: x-large;
+
+}
+.calandericon{
+    width: 13%;
+}
+.right input,select{
+    font-size: large;
+    background: rgba(237, 237, 237, 1);
+    border: transparent;
+    padding: 3%;
+    border-radius: 10px;
+
+    
+}
+.submit-btn{
+    text-decoration: none;
+    background-color:rgb(123,192,73);
+    border-radius: 10px;
+    padding: 4%;
+    width: 45%;
+    text-align: center;
+    color: white;
+    margin-left: 2%;
+    border: solid 3px rgb(123,192,73);
+
+}
+.submit-btn:hover{
+    color :rgb(123,192,73);
+    background-color: white;
+    box-sizing: border-box;
+    border: solid 3px rgb(123,192,73);
+    /* padding: 4.05%; */
+
+
+
+}

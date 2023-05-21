@@ -1,0 +1,21 @@
+.navbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.biblio-logo{
+    width: 12%;
+    display: flex;
+    align-items: center;
+}
+.navbar-right-side{
+    /* background-color: bisque; */
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}

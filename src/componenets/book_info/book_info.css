@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+.Bckagrounde_div{
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.navbar{
+    height: 10vh;
+    z-index: 1;
+}
+.book_data{
+    display: flex;
+    /* justify-content: space-around; */
+    padding-top: 5%;
+    font-family: 'Commissioner', sans-serif;
+}
+.left{
+    width: 46%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* background-color: aqua; */
+    justify-self: start;
+}
+.right{
+    width: 50%;
+}
+.data_row{
+    display: flex;
+    justify-content: space-between;
+}
+.book-img{
+    width: 100%;
+    text-align: center;
+}
+.reserver_maintenant{
+    border: solid 2px rgba(0, 180, 219, 1);
+    color: rgba(0, 180, 219, 1);
+    font-size: x-large;
+    padding: 1%;
+    margin: 2%;
+    user-select: none;
+    text-decoration: none;
+    width: 55%;
+    text-align: center;
+}
+.reserver_maintenant:hover{
+    background-color: rgba(0, 180, 219, 1);
+    color: white;
+    cursor: pointer;
+
+}
+.reserver_maintenant:active{
+    border: solid 2px rgba(0, 180, 219, 1);
+    color: rgba(0, 180, 219, 1);
+    
+    background-color: white;
+
+}
+.ajouter{
+    width: 30%;
+    border: solid 2px rgba(0, 180, 219, 1);
+    color: rgba(0, 180, 219, 1);
+    font-size: large;
+    padding: 0.5%;
+    /* margin: 1%; */
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+   
+
+}
+.cart-icon{
+    width: 100%;
+
+}
+.ajouter:hover{
+    background-color: rgba(0, 180, 219, 1);
+    color: white;
+    cursor: pointer;
+}
+.ajouter:active{
+    width: 30%;
+    border: solid 2px rgba(0, 180, 219, 1);
+    color: rgba(0, 180, 219, 1);
+    font-size: large;
+    padding: 0.5%;
+    margin: 0.3%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+
+   
+}
+.titile_book{
+    font-size: 7.5vh;
+}
+.book_auther{
+    font-size: 3vh;
+    margin-bottom: 9%;
+}
+.hr{
+    color: rgba(0, 0, 0, 0.35);
+}
+.grid_data{
+    width: 70%;
+    margin-bottom: 3%;
+}
+.data_row{
+    margin: 0.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.Disponible-btn{
+    background: rgba(123, 192, 73, 0.47);
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+
+
+}
+
+.seconde_data{
+    width: 45%;
+}
+.learn_more{
+    color: rgba(0, 131, 176, 1);
+    cursor: pointer;
+}

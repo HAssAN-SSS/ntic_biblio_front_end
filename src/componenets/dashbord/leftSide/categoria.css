@@ -1,0 +1,27 @@
+.categoria{
+    /* background-color: #ededed; */
+    display: flex;
+    flex-flow: column;
+    margin-top:8% ;
+    cursor: pointer;
+   width: 90%;
+    border-radius: 10px;
+    padding-left: 8%;
+}
+.self-categoria{
+    display: flex;
+}
+.sub_categories{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+.more-toggel{
+    /* align-self: flex-end; */
+    justify-self: end;
+    color: rgba(0, 0, 0, 0.37);
+    font-size: smaller;
+    display: flex;
+    justify-content: end;
+}

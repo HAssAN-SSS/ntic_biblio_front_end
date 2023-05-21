@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter,Routes ,Route} from 'react-router-dom'
+import GetStart from "./componenets/welcomePage/getStart";
+import Inscrire from './componenets/inscrire/inscrire';
+import Login from './componenets/login/login';
+import Dashbord from './componenets/dashbord/dashbord';
+import Book_info from './componenets/book_info/book_info';
+import Reserver from './componenets/dashbord/reserver/reserver';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<GetStart />} />
+          <Route path="/inscrire" element={<Inscrire />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashbord" element={<Dashbord />} />
+          <Route path="/booke_info" element={<Book_info />} />
+          <Route path="/reserver" element={<Reserver />} />
+
+
+
+
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }

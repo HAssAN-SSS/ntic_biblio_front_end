@@ -10,7 +10,7 @@ export default function Reserver() {
             <div className='reserver-panal'>
                 
                 {/* ----------------------------------------left------------------------------ */}
-                <div className='left'>
+                <div className='left-img'>
 
                     <img src="/img/welcome.jpg" alt="" srcset="" width={'100%'}/>
 

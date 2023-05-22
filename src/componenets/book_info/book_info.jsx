@@ -37,8 +37,7 @@ export default function Book_info() {
 
             <div className='right'>
                 <div className='titile_book'>
-                Front-End Developer 
-                Handbook
+                Front-End Developer Handbook
                 </div>
 
                 <div className='book_auther'>

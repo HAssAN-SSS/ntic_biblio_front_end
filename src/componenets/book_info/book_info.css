@@ -13,7 +13,7 @@
 .book_data{
     display: flex;
     /* justify-content: space-around; */
-    padding-top: 5%;
+    padding-top: 2.5%;
     font-family: 'Commissioner', sans-serif;
 }
 .left{
@@ -35,6 +35,7 @@
 .book-img{
     width: 100%;
     text-align: center;
+    /* border-radius: 0px 0px 0px 0px ; */
 }
 .reserver_maintenant{
     border: solid 2px rgba(0, 180, 219, 1);
@@ -96,10 +97,11 @@
    
 }
 .titile_book{
-    font-size: 7.5vh;
+    font-size: 2.8rem;
+    /* background-color: aqua; */
 }
 .book_auther{
-    font-size: 3vh;
+    font-size: 1.5rem;
     margin-bottom: 9%;
 }
 .hr{

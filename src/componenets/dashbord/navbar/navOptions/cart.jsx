@@ -1,6 +1,6 @@
-import './profile.css'
+import './cart.css'
 
-export default function Profile() {
+export default function Cart() {
     let style = {
         'color' : 'aqua'
     }
@@ -10,4 +10,4 @@ export default function Profile() {
             profile
         </div>
     )
-}
+}  

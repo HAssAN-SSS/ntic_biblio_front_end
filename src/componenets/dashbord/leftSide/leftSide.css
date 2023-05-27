@@ -5,6 +5,7 @@
     padding-left: 5%;
     /* display: none; */
     overflow-y: scroll;
+    z-index: 3;
 }
 .sub_categorie{
     border: solid 2px yellow;
@@ -33,11 +34,15 @@
     justify-self: flex-end;
     font-size: smaller;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 12%;
 
 }
 ::-webkit-scrollbar{
     width: 1%;
     color: black;
+}
+.entr_filter{
+    cursor: pointer;
+  
 }

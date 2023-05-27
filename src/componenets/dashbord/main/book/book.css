@@ -17,7 +17,7 @@
     padding-left: 1%;
     display: flex;
     flex-flow: column;
-    align-items: start ;
+    align-items: flex-start ;
     justify-content: space-around;
     padding: 6% 3%;
     border-radius: 0px 10px 10px 0px;

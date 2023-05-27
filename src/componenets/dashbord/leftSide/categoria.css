@@ -23,5 +23,5 @@
     color: rgba(0, 0, 0, 0.37);
     font-size: smaller;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }

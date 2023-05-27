@@ -2,11 +2,11 @@ import './leftSide.css';
 import { useState } from 'react';
 import Kategoria from './categoria';
 
-export default function LeftSide() {
+export default function LeftSide(props) {
+
     let [categories,setCategories] = useState([])
     let [show_categories,set_show_Categories] = useState(false)
     let [yellow,setYellow] = useState('')
-
 
     let list_categorie= {
         all : {
@@ -21,7 +21,6 @@ export default function LeftSide() {
     
     function CategoriasToggel() {
 
-        
         if(!show_categories) {
 
             set_show_Categories(true)
@@ -33,7 +32,6 @@ export default function LeftSide() {
                     ...prv,
                     <Kategoria down_up={'down' } llave={key} subCategorias={list_categorie.all[key]} />
                     
-                    
                 ])
                 setYellow('yellow')
             }
@@ -44,15 +42,13 @@ export default function LeftSide() {
             setCategories([])
             setYellow('')
 
-            
-
         }
 
     }
 
     return (
         <div className='leftSide'>
-            <h2>Filter</h2>
+            <h3 onClick={props.vesionSide} className='entr_filter'>Filter</h3>
             <hr />
             <br />
             <span className={`all sub_categorie ${yellow}`} onClick={CategoriasToggel}>
@@ -67,7 +63,6 @@ export default function LeftSide() {
                     Clear Filter
 
                 </span> : ''}
-                
                 
             </div>
                 

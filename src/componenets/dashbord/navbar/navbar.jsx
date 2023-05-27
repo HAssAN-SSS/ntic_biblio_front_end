@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './navbar.css'
 
-export default function Navbar() {
+export default function Navbar(props) {
 
     return(
         <div className='navbar'>
@@ -22,7 +22,7 @@ export default function Navbar() {
 
                 <div className='cart icon'>
             
-                    <img src="/img/carticon.png" alt="" srcset="" width={'100%'}/>
+                    <img src="/img/carticon.png" alt="" srcset="" width={'100%'} onClick={props.vesion} />
 
                 </div>
 
@@ -31,7 +31,7 @@ export default function Navbar() {
                 <img src="/img/personicon.png" alt="" srcset="" width={'100%'}/>
 
                 </div>
-
+             
             </div>
 
         </div>

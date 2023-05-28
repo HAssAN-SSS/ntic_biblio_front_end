@@ -2,12 +2,12 @@ import './cart.css'
 
 export default function Cart() {
     let style = {
-        'color' : 'aqua'
+        'color' : 'black'
     }
     return(
         
         <div className='profile' style={style}>
-            profile
+            Cart
         </div>
     )
 }  

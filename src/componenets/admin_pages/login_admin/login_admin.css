@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+.login{
+    background-color: #EDEDED;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-panal{
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 45%;
+    height: 67%;
+    border-radius: 25px;
+    padding: 2%;
+}
+.inputs input{
+    width: 80%;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    color: #727272;
+    background-color: #EDEDED;
+    outline: transparent;
+    border: transparent;
+    border-radius: 10px;
+    padding: 1%;
+}
+.btn-submit{
+    background-color: #7BC049;
+    width: 35%;
+    height: 19%;
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    border-radius: 25px;
+    outline: transparent;
+    border: transparent;
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 0%;
+    top: -2%;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-submit:hover{
+    border:  solid 3px #7BC049;
+    background-color: white;
+    color: #7BC049;
+
+}
+.title-inscrire-icon{
+    margin-top: 5%;
+}
+.title-inscrire{
+    font-size: 1.7rem;
+}

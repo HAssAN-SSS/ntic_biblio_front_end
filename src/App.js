@@ -5,6 +5,8 @@ import Login from './componenets/login/login';
 import Dashbord from './componenets/dashbord/dashbord';
 import Book_info from './componenets/book_info/book_info';
 import Reserver from './componenets/dashbord/reserver/reserver';
+import Login_admin from './componenets/admin_pages/login_admin/login_admin';
+import Dashbord_admin from './componenets/admin_pages/dashbord_admin/dashbord_admin';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
           <Route path="/dashbord" element={<Dashbord />} />
           <Route path="/booke_info" element={<Book_info />} />
           <Route path="/reserver" element={<Reserver />} />
+          <Route path="/login_admin" element={<Login_admin />} />
+          <Route path="/Dashbord_admin" element={<Dashbord_admin />} />
+
 
 
 

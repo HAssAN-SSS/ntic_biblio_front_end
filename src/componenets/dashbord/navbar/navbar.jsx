@@ -20,9 +20,9 @@ export default function Navbar(props) {
 
                 </div>
 
-                <div className='cart icon'>
+                <div className='cart_icon'> 
             
-                    <img src="/img/carticon.png" alt="" srcset="" width={'100%'} onClick={props.vesion} />
+                    <img src="/img/carticon.png" alt=""  width={'100%'} onClick={props.vesion} />
 
                 </div>
 

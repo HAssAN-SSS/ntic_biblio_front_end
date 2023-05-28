@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .dashbord{
@@ -5,7 +6,7 @@
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns:  1fr ;
+    /* grid-template-columns:  1fr ; */
     grid-template-rows: 10% 1fr;
 
     
@@ -44,25 +45,39 @@
     width: 0%; */
 }
 @keyframes leftside_mouve_in_only {
-    from {grid-template-columns: 0% 1fr ;}
-    to {grid-template-columns: 15% 1fr ;}
+    from {grid-template-columns:0% 1fr;}
+    to {grid-template-columns:15% 1fr;}
   }
 @keyframes leftside_mouve_in_togather {
-from {grid-template-columns: 0% 1fr 15% ;}
-to {grid-template-columns: 15% 1fr 15%;}
+from {grid-template-columns:0% 1fr 15%;}
+to {grid-template-columns:15% 1fr 15%;}
 }
 
-@keyframes leftside_mouve_out {
-from {grid-template-columns: 15% 1fr ;}
-to {grid-template-columns: 0% 1fr ;}
-}
+/* @keyframes leftside_mouve_out {
+from {grid-template-columns:15% 1fr;}
+to {grid-template-columns:1fr;}
+} */
+
+/* @keyframes leftside_mouve_out_togather {
+    from {grid-template-columns:15% 1fr 15%;}
+    to {grid-template-columns:1fr 15%;}
+    } */
 
 @keyframes cart_mouve_in {
-    from {grid-template-columns:  1fr 0% ;}
-    to {grid-template-columns:  1fr 15% ;}
+    from {grid-template-columns:1fr 0%;}
+    to {grid-template-columns:1fr 15%;}
+    }
+/* @keyframes cart_mouve_out {
+    from {grid-template-columns:1fr 15% ;}
+    to {grid-template-columns:1fr;}
     }
 
+@keyframes cart_mouve_out_togather {
+    from {grid-template-columns:15% 1fr 15% ;}
+    to {grid-template-columns:15% 1fr;}
+    } */
+
 @keyframes cart_mouve_in_togather {
-    from {grid-template-columns:  15% 1fr 0% ;}
-    to {grid-template-columns: 15% 1fr 15% ;}
+    from {grid-template-columns:15% 1fr 0%;}
+    to {grid-template-columns:15% 1fr 15%;}
     }

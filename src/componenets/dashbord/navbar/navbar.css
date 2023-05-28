@@ -19,3 +19,11 @@
     display: flex;
     align-items: center;
 }
+.cart_icon{
+    cursor: pointer;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

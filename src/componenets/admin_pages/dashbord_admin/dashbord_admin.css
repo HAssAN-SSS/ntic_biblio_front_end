@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+.Dashbord_admin{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(240,240,240);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60% 1fr;
+    font-family: 'Commissioner', sans-serif;
+
+}
+.left-admin{
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.medio-admin{
+    /* background-color: blue; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5% 1%;
+}
+.medio-admin input{
+    height: 8%;
+    width: 70%;
+    outline: transparent;
+    border: transparent;
+    border-radius: 5px;
+}
+.right-admin{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+.logo-admin{
+width: 40%;
+height: 10%;
+justify-self: flex-start;
+align-self: flex-start;
+}
+.Livre_Info{
+    color: #7BC049;
+    border: 1.5px solid #7BC049;
+    width: 55%;
+    height: 25%;
+    border-radius: 15px;
+    font-size: large;
+}
+.Bloquer_utilisateur{
+    color: red;
+    border: 1.5px solid red;
+    width: 55%;
+    height: 25%;
+    border-radius: 15px;
+    font-size: large;
+}
+.admin-left-btn{
+    height: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    /* background-color: bisque; */
+    padding: 5%;
+
+}
+.admin-right-btn{
+    height: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5%;
+}
+.Read_Responsable{
+    color: rgb(255, 255, 255);
+    border: 1.5px solid rgba(66, 15, 131, 0.74);
+    background-color: rgba(66, 15, 131, 0.74);
+    width: 55%;
+    height: 25%;
+    border-radius: 15px;
+    font-size: large;
+}
+.Add_Responsable{
+    color: rgb(255, 255, 255);
+    border: 1.5px solid #7BC049;
+    background-color: #7BC049;
+    width: 55%;
+    height: 25%;
+    border-radius: 15px;
+    font-size: large;
+}
+.data_gride{
+    display: flex;
+    flex-flow:column ;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    background-color: white;
+    padding: 0 0.5%;
+    margin: 0 5% 0 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.data-grid-labels span{
+
+    margin: 11%;
+    font-weight: 600;
+    
+
+}
+
+.Respo_data_row span{
+    margin: 10%;
+
+}
+.update-respo{
+    background-color: rgb(132, 156, 221);
+    border: solid rgb(132, 156, 221);
+    border-radius: 5px;
+    padding: 0.5%;
+    cursor: pointer;
+}
+.remove-respo{
+    background-color: red;
+    color: white;
+    padding: 0.5%;
+    cursor: pointer;
+
+    border: solid red;
+    border-radius: 5px;
+    margin-left: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

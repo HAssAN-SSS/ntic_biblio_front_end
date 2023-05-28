@@ -13,98 +13,116 @@ export default function Dashbord() {
     let [style,setStyle] = useState(
         {
             'grid-template-columns': '1fr',
-            'grid-template-rows': '10% 1fr'
         }
     )
     useEffect(() => {
+        console.log(style)
 
         if(!showCart && !showLeftSide) {
             setStyle(
-    
-                {
-                    
-                    'grid-template-columns': '1fr',
-                    'grid-template-rows': '10% 1fr'
-                }
-    
-                )
+                {'grid-template-columns': '1fr'}
+            )
         }
-        else if(showLeftSide && !showCart) {
-            setStyle(prv => {
-
-                if(prv['grid-template-columns'] !== '1fr') {
-
-                    return {   
-                        'animation-name':'leftside_mouve_in_only',
-                        'animation-duration' : '0.8s',
-                        'grid-template-columns': '15% 1fr',
-                        'grid-template-rows': '10% 1fr'
-                    }
-                }
-                
-                }
-            )
-        }else if(showCart && !showLeftSide){
-
-            setStyle(prv => {
-
-                if(prv['grid-template-columns'] !== '1fr') {
-
-                    return {   
-                        'animation-name':'cart_mouve_in',
-                        'animation-duration' : '0.8s',
-                        'grid-template-columns': '1fr 15%',
-                        'grid-template-rows': '10% 1fr'
-                    }
-                }
-                
-                }
-            )
-            
-        }else{
-
-            setStyle(prv => {
-
-                if(prv['grid-template-columns'] !== '1fr 15%') {
-
-                    return {   
-                        'animation-name':'leftside_mouve_in_togather',
-                        'animation-duration' : '0.8s',
-                        'grid-template-columns': '15% 1fr 15%',
-                        'grid-template-rows': '10% 1fr'
-                    }
-                }
-                else if(prv['grid-template-columns'] !== '15% 1fr') {
-
-                    return {   
-                        'animation-name':'cart_mouve_in_togather',
-                        'animation-duration' : '0.8s',
-                        'grid-template-columns': '15% 1fr 15%',
-                        'grid-template-rows': '10% 1fr'
-                    }
-
-                    }
-                }
-            )
-
-        }
+        
     },[showCart,showLeftSide])
 
     function vesion() {
         if(showCart) {
+            
+            setStyle(() => {
+    
+                if(showLeftSide) {
+        
+                        return {   
+                            'animationName':'cart_mouve_out_togather',
+                            'animationDuration' : '0.3s',
+                            'grid-template-columns': '15% 1fr',
+                        }
+        
+                        }
+                else{
+                            return {
+                                'animationName':'cart_mouve_out',
+                                'animationDuration' : '0.3s',
+                                'grid-template-columns': '1fr 15%',
+                            }
+                        }
+                    }
+                )
+
             setShowCart(false)
         }
         else{
+            setStyle(() => {
+    
+            if(showLeftSide) {
+    
+                    return {   
+                        'animationName':'cart_mouve_in_togather',
+                        'animationDuration' : '0.3s',
+                        'grid-template-columns': '15% 1fr 15%',
+                    }
+    
+                    }
+            else{
+                        return {
+                            'animationName':'cart_mouve_in',
+                            'animationDuration' : '0.3s',
+                            'grid-template-columns': '1fr 15%',
+                        }
+                    }
+                }
+            )
             setShowCart(true)
         }
     }
 
     function vesionSide() {
-        // alert('hole')
+
         if(showLeftSide) {
+            setStyle( () => {
+    
+                if(showCart) {
+        
+                        return {   
+                            'animationName':'leftside_mouve_out_togather',
+                            'animationDuration' : '0.3s',
+                            'grid-template-columns': '1fr 15%',
+                        }
+        
+                        }
+                else{
+                            return {
+                                'animationName':'leftside_mouve_out',
+                                'animationDuration' : '0.3s',
+                                'grid-template-columns': '1fr',
+                            }
+                        }
+                    }
+                )
             setShowLeftSide(false)
         }
         else{
+            setStyle(() => {
+    
+                if(showCart) {
+        
+                        return {   
+                            'animationName':'leftside_mouve_in_togather',
+                            'animationDuration' : '0.3s',
+                            'grid-template-columns': '15% 1fr 15%',
+                        }
+        
+                        }
+                else{
+                            return {
+                                'animationName':'leftside_mouve_in_only',
+                                'animationDuration' : '0.3s',
+                                'grid-template-columns': '15% 1fr',
+                            }
+                        }
+                    }
+                )
             setShowLeftSide(true)
         }
     }

@@ -1,5 +1,31 @@
-.profile{
-    background-color: aquamarine;
-    width: 100%;
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-small;
+    padding: 2%;
     height: 100%;
+    background-color: #FBFBFBFB;
+
+}
+
+.cart-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    padding-right: 15%;
+    font-size: 24px;
+    color: #676767;
+    margin-bottom: 10%;
+    
+}
+.cart-header svg{
+    
+    cursor: pointer;
+}
+.cart-items-list{
+    height: 90%;
+    overflow-y: scroll;
+
 }

@@ -8,7 +8,7 @@ import Navbar from "./navbar/navbar";
 export default function Dashbord() {
     
     let [showCart,setShowCart] = useState(false)
-    let [showLeftSide,setShowLeftSide] = useState(false)
+    let [showLeftSide,setShowLeftSide] = useState(true)
 
     let [style,setStyle] = useState(
         {
@@ -142,7 +142,7 @@ export default function Dashbord() {
             <Main className={'Main'} />
             {
 
-               showCart ? <Cart /> : ''  
+               showCart ? <Cart inDashbord={true} vesion={vesion}/> : ''  
             }
         </div>
     )

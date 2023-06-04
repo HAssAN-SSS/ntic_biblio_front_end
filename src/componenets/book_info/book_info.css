@@ -132,3 +132,14 @@
     color: rgba(0, 131, 176, 1);
     cursor: pointer;
 }
+#cart-id{
+    background-color: #FBFBFB;
+
+    position: absolute;
+    right: 0.0%;
+    top:10%;
+    width: 15%;
+    height: 90%;
+
+
+}

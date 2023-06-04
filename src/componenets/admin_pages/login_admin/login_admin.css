@@ -30,7 +30,7 @@
     border-radius: 10px;
     padding: 1%;
 }
-.btn-submit{
+.btn-submit-admin{
     background-color: #7BC049;
     width: 35%;
     height: 19%;
@@ -48,12 +48,12 @@
     left: 0%;
     top: -2%;
 }
-.login-btn{
+.login-btn-admin{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btn-submit:hover{
+.btn-submit-admin:hover{
     border:  solid 3px #7BC049;
     background-color: white;
     color: #7BC049;

@@ -2,13 +2,17 @@ import { Link } from 'react-router-dom'
 import Navbar from '../dashbord/navbar/navbar'
 import Bckagrounde_div from './bckagrounde_div'
 import './book_info.css'
+import Cart from '../dashbord/navbar/navOptions/cart'
+import { useState } from 'react'
 
 export default function Book_info() {
+
+    let [showCart, setShowCart] = useState('show')
 
     return(
         <div className='book_info'>
 
-            <Navbar className={'navbar'} />
+            <Navbar className={'navbar'} setShowCart={setShowCart} showCart={showCart}/>
             <Bckagrounde_div className={'Bckagrounde_div'} />
     <div className='book_data'>
 
@@ -92,11 +96,17 @@ export default function Book_info() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, quibusdam impedit corrupti ea nesciunt veritatis aspernatur incidunt ipsum illum, iste, minus minima voluptatem nemo vel quidem ullam? Magni, nihil possimus.
                </span><span className='learn_more'>... learn more</span>
               </div>
-
             </div>
             
-            
+            {
+                showCart === 'show' ?
+            <div id='cart-id'>
 
+                <Cart  setShowCart={setShowCart} showCart={showCart}/>
+            </div>
+            :
+            null
+            }
         </div>
     </div>
     )

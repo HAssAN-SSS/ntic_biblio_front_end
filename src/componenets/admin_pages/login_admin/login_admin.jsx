@@ -37,7 +37,7 @@ export default function Login_admin() {
                     <input type="text" placeholder='Pseudo Admin' name='cef'/>
                     <input type="text" placeholder='Mot de Passe Admin ' name='password'/>
                 
-                    <Link to={'/Dashbord_admin'} className='login-btn btn-submit'>
+                    <Link to={'/Dashbord_admin'} className='login-btn-admin btn-submit-admin'>
 
                         submit
 

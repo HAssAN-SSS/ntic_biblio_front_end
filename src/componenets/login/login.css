@@ -36,11 +36,14 @@
     color: white;
     font-family: 'Commissioner', sans-serif;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 32px;
     border-radius: 25px;
     outline: transparent;
     border: transparent;
     text-decoration: none;
+    padding: 6% 0;
+    border:  solid 3px #7BC049;
+
 }
 .logo{
     position: absolute;
@@ -57,4 +60,7 @@
     background-color: white;
     color: #7BC049;
 
+}
+.inscrire-icon{
+    width: 7%;
 }

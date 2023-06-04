@@ -12,7 +12,7 @@ export default function LeftSide(props) {
         all : {
             'categorie1' : ['sub_categorie1','sub_categorie2','sub_categorie3'],
             'categorie2' : ['sub_categorie1','sub_categorie2','sub_categorie3'],
-            'categorie3' : ['sub_categorie1','sub_categorie2','sub_categorie3']
+            'categorie3' : ['sub_categorie1','info_grafique','sub_categorie3']
 
         }
     }

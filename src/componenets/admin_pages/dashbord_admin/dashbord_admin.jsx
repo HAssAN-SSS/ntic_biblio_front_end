@@ -2,7 +2,7 @@ import './dashbord_admin.css'
 import Respo_data_row from './respo_data_row'
 
 export default function Dashbord_admin() {
-
+    
     return (
         <div className='Dashbord_admin'>
             <div className='left-admin'>

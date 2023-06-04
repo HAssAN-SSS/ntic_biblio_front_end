@@ -36,6 +36,7 @@ export default function Login() {
 
                     <input type="text" placeholder='Entrer votre CEF' name='cef'/>
                     <input type="text" placeholder='Entrer Votre Nom' name='nom_prenome'/>
+                    <input type="text" placeholder='Entrer Votre Prenom' name='prenom_prenome'/>
                     <input type="text" placeholder='Entrer Votre mot de passe' name='password'/>
                 
                     <Link to={'/dashbord'} className='login-btn btn-submit'>

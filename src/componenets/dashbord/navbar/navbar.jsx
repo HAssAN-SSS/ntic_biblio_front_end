@@ -3,6 +3,23 @@ import './navbar.css'
 
 export default function Navbar(props) {
 
+    function toggelCart() {
+        if(props.vesion) {
+            props.vesion()
+        }
+        if(props.setShowCart && !props.inDashbord) {
+            if(props.showCart === 'show' ) {
+                props.setShowCart(false)
+                // setCartStyle({ display: "none" }) ;
+            }
+            else{
+                props.setShowCart('show')
+                // setCartStyle({ display: "block" }) ;
+            }
+            
+        }
+      }
+
     return(
         <div className='navbar'>
             
@@ -20,9 +37,9 @@ export default function Navbar(props) {
 
                 </div>
 
-                <div className='cart_icon'> 
+                <div className='cart_icon' onClick={toggelCart}> 
             
-                    <img src="/img/carticon.png" alt=""  width={'100%'} onClick={props.vesion} />
+                    <img src="/img/carticon.png" alt=""  width={'100%'} onClick={toggelCart} />
 
                 </div>
 

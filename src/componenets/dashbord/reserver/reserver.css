@@ -77,3 +77,11 @@
 
 
 }
+.cart-reserver{
+    position: absolute;
+    width: 15%;
+    height: 85%;
+    right: 0;
+    top: 10%;
+    /* overflow-y: scroll; */
+}
